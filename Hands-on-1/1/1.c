@@ -10,7 +10,7 @@ int main(){
 		return 1;
 	}
 
-	int hl = symlink("tempfile","tempHL");
+	int hl = link("tempfile","tempHL");
 	if(hl<0){
 		perror("Failed");
 		return 1;
