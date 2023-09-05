@@ -8,9 +8,11 @@ int main(){
 	pid_t pid = fork();
 	if(pid == 0){
 		printf("child pid: %d\n",getpid());
+		exit(0);
 	}	
 	else if(pid>0){
 		printf("Parent process\n");
+		sleep(10);
 	}
 	else{
 		printf("failed to create child");
