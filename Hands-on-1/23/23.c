@@ -1,3 +1,12 @@
+/*
+============================================================================
+Name : 23.c
+Author : Siddharth V. Pillai
+Description : Write a program to create a Zombie state of the running program.
+Date: 5th Sep, 2023.
+============================================================================
+*/
+
 #include<stdio.h>
 #include<unistd.h>
 #include<stdlib.h>

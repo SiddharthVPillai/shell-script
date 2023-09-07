@@ -1,3 +1,13 @@
+/*
+============================================================================
+Name : 16.c
+Author : Siddharth V. Pillai
+Description : Write a program to perform mandatory locking.
+b. Implement read lock
+Date: 25th Aug, 2023.
+============================================================================
+*/
+
 #include<stdio.h>
 #include<fcntl.h>
 #include<unistd.h>
@@ -7,7 +17,7 @@
 int main(void){
 	int fd = open("file",O_RDWR);
 	struct flock lock;
-	lock.l_type = F_WRLCK;
+	lock.l_type = F_RDLCK;
 	lock.l_whence = SEEK_SET;
 	lock.l_start = 0;
 	lock.l_len = 0;

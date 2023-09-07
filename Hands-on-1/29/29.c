@@ -1,3 +1,12 @@
+/*
+============================================================================
+Name : 29.c
+Author : Siddharth V. Pillai
+Description : Write a program to get scheduling policy and modify the schedulingpolicy (SCHED_FIFO,SCHED_RR).
+Date: 5th Sep, 2023.
+============================================================================
+*/
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<sched.h>

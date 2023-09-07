@@ -1,3 +1,12 @@
+/*
+============================================================================
+Name : 30.c
+Author : Siddharth V. Pillai
+Description : Write a program to run a script at a specific time using a Daemon process.
+Date: 5th Sep, 2023.
+============================================================================
+*/
+
 #include<stdio.h>
 #include<unistd.h>
 #include<stdlib.h>
@@ -8,8 +17,8 @@
 
 #define PATH "/home/siddharth-pillai/Desktop/ubuntu/script/Hands-on-1/30/prog"
 
-#define Hour 14
-#define Minute 15
+#define Hour 7
+#define Minute 30
 #define Second 0
 
 void exe(){
