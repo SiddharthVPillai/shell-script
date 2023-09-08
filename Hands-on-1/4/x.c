@@ -6,13 +6,13 @@ Description : Write a program to open an existing file with read write mode. Try
 Date: 11th Aug, 2023.
 ============================================================================
 */
-#include<stdlib.h>
+
 #include<stdio.h>
 #include<fcntl.h>
 
 int main(){
 	int f1 = open("temp.txt",O_RDWR);
-	int f2 = open("temp.txt",O_CREAT | O_EXCL);		
+	int f2 = open("temp.txt",O_EXCL);		
 		
 	if(f1<0){
 		perror("Program");
@@ -23,10 +23,13 @@ int main(){
 
 	if(f2<0){
 		perror("Program");
-		exit(1);
 	}
 	printf("f2 = %d",f2);
 	printf("\n");
 	
+	if(f3<0){
+		perror("Program");
+	}
+	printf("f3 = %d",f3);
 	return 0;
 }

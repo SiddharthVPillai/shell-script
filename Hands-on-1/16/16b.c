@@ -1,6 +1,6 @@
 /*
 ============================================================================
-Name : 16.c
+Name : 16b.c
 Author : Siddharth V. Pillai
 Description : Write a program to perform mandatory locking.
 b. Implement read lock

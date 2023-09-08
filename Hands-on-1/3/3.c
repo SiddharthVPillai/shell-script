@@ -12,7 +12,7 @@ Date: 11th Aug, 2023.
 #include<fcntl.h>
 
 int main(){
-	int f = creat("temp.txt",O_CREAT);
+	int f = creat("temp.txt", O_RDWR);
 	printf("fd = %d",f);
 	if(f<0){
 		perror("Program");
