@@ -1,6 +1,6 @@
 /*
 ============================================================================    
-Name : 34_cli.c
+Name : 34_fork_client.c
 Author : Siddharth V. Pillai
 Description : Write a program to create a concurrent server.
 a. use fork
@@ -27,7 +27,7 @@ int main(){
 
     connect(nsd, (struct sockaddr *)&serv, sizeof(serv));
 
-    char serv_res[256];
+    char serv_res[1024];
     recv(nsd, serv_res,sizeof(serv_res),0);
 
     printf("Data from server: %s",serv_res);
